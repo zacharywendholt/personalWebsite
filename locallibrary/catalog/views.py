@@ -31,6 +31,3 @@ def projects(request):
     return render(request, 'projects.html')
 
 
-def education(request):
-    return render(request, 'education.html')
-

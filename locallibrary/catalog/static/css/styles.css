@@ -3,6 +3,13 @@
     padding: 0;
     list-style: none;
 }
+.informationtabs{
+
+}
+
+li {
+    margin-left: 20px;
+}
 
 body{
     background-color: #363636; 
@@ -11,13 +18,52 @@ body{
 
 h1 {
     color: #E8175D;
+    text-align: center;
+    margin: 0 auto;
 }
 
 h2 {
     color: #E8175D;
-
 }
 
 a {
     color: #CC527A;
 }
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #A8A7A7 ;
+    background-color: #363636;
+  }
+
+  .tab button {
+    width: 20%;
+    background-color: inherit;
+    color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #A8A7A7;
+    color: #363636;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #A8A7A7;
+    color: #363636;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #A8A7A7;
+    border-top: none;
+  }

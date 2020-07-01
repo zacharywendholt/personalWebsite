@@ -10,5 +10,4 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('', RedirectView.as_view(url='catalog/', permanent=True)),
     path('projects/', views.projects, name='projects'),
-    path('education/', views.education, name='education')
 ]
