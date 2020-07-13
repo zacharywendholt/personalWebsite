@@ -1,5 +1,80 @@
 {% extends "basegeneric.html" %}
 
+{% block tabs %}
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'Employment')">Employment</button>
+  <button class="tablinks" onclick="openCity(event, 'Links')">Links</button>
+</div>
+<div id="About" class="tabcontent">
+  <h1>About Me</h1>
+  <br>
+  <p>I am a senior computer science student studying at Indiana University.
+     I have a specialization in Artificial Intelligence. I found my passion
+    for computer science through making video games. Programming video games gave
+    me a way to visually see what my code was actually doing. I am a team oriented
+    individual and enjoy being able to teach others what I know when given the chance.</p>
+  <a href="{% url 'index' %}">Home</a>
+</div>
+
+<div id="Projects" class="tabcontent">
+  <h1>Projects</h1>
+  <br>
+  <p>I have worked on a wide variety of projects including:
+    <li>Making a Google Home from the Google AIY Voice kit</li>
+    <li>Designed and built video games using the Unity Engine</li>
+    <li>Built an Application for IOS</li>
+    <li>Made a deep neural network to classify images</li>
+  </p>
+  <a href="{% url 'projects' %}">link to Projects</a>
+</div>
+
+<div id="Education" class="tabcontent">
+  <h1>Education</h1>
+  <br>
+  <p>I am a senior at Indian University. I am majoring in Computer Science, specializing in Artificial Intelligence.
+    I am also Minoring in Video Game design. Through the many different classes, I have gained the knowledge of many
+    different languages as well as good practices in programming conventions. 
+  </p>
+  <h2>Relevant Courses</h2>
+    <li>Intro to Artificial Intelligence, Machine learning: <b>Python</b></li>
+    <li>Data Structures: <b>Java, Code Optimization</b></li>
+    <li>Game Technology: <b>Unity, Unreal, C#, SourceTree, Excel</b></li>
+</div>
+
+<div id="Employment" class="tabcontent">
+  <h1>Employment</h1>
+  <br>
+    <li><h4>OFS Web Development Internship</h4>
+      <ul>
+        <li>Over the summer of 2019 I worked on modules for OFS' website using the Drupal CMS. I worked with another intern for roughly half
+          of the internship, and worked on individual modules after that. I got experience using HTML,
+          CSS, JavaScript, and PHP. This internship also taught me skills like documentation, thorough code commenting,
+          and using source control in an actual work environment. 
+        </li>
+      </ul>
+    </li>
+    <li><h4>Voegerl Construction</h4>
+      <ul>
+        <li>During the summers of 2016 - 2018, I worked for a local construction company.
+           Over time, I progressed from being assigned simple tasks to taking on more difficult roles.
+            During my final summer, I was given the responsibility of training a new employee.
+             This job taught me to be persistent and determined in my work.
+              It also showed me how rewarding it can be to see the end result of something you worked hard to create.
+        </li>
+      </ul>
+    </li>
+</div>
+
+<div id="Links" class="tabcontent">
+  <h1>Links</h1>
+  <br>
+  <p>Placeholders</p>
+</div>
+{% endblock %}
+
 {% block content %}
   
   <p style="text-align: center;">Hello, my name is</p>
