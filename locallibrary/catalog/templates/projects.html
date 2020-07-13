@@ -1,7 +1,16 @@
 {% extends "basegeneric.html" %}
 
+{% block title %} <title>Projects</title>{% endblock %}
+
+{% block tabs %}
+<div class="tab">
+  <button class="tablinks" style="width: 100%;" onclick="window.location.href='{% url 'index' %}'">Home</button>
+</div>
+{% endblock %}
+
 {% block content %}
   <h1>Projects</h1>
-  <p>developed by,  <em>Zachary Wendholt</em></p>
+  <br>
+  
 
 {% endblock %}
